@@ -1,0 +1,85 @@
+@use "../../../../sass/colors" as color;
+
+.reviewers {
+  padding-top: 7.2rem;
+  position: relative;
+}
+
+.reviewer-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.reviewer {
+  display: flex;
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 1.2rem;
+}
+
+.reviewer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.reviewer-text {
+  font-size: 2.4rem;
+  max-width: 28rem;
+}
+
+.reviewer-info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.reviewer-img {
+  overflow: hidden;
+  border-radius: 100%;
+  width: 5.8rem;
+  height: 5.8rem;
+}
+
+.reviewer-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: color.$dark-blue;
+
+  & > strong {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  & > span {
+    font-size: 1.4rem;
+  }
+}
+
+//slider-buttons
+.buttons-positioner {
+  position: absolute;
+  top: -5.6rem;
+  right: -5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  & > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background-color: #fff;
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 100%;
+
+    & > svg {
+      font-size: 4rem;
+    }
+  }
+}

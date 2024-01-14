@@ -1,0 +1,72 @@
+@use "../../../sass/colors" as color;
+
+.ourBlog {
+  padding: 8rem 0;
+}
+
+.featured-blog__inner {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0 5rem;
+
+  & > article {
+    flex: 30rem;
+    max-width: 30rem;
+    display: flex;
+
+    & > a {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      height: 100%;
+      width: 100%;
+
+      & > p {
+        font-size: 2rem;
+      }
+
+      & > .featured-blog__profile {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        & > .blogger-name {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.featured-blog__profile {
+  display: flex;
+  align-items: center;
+
+  & > img {
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+}
+
+.featured-blog__category {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.6rem;
+
+  & > strong {
+    color: color.$dark-blue;
+  }
+
+  & > span {
+    color: color.$color-gray;
+  }
+}
+
+.load-button__block {
+  margin-top: 8.4rem;
+}

@@ -1,0 +1,172 @@
+@use "./colors" as color;
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &-md {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.button {
+  border: 2px solid transparent;
+  outline: 0;
+
+  font-weight: 700;
+  max-width: max-content;
+  border-radius: 999px;
+  font-size: 2rem;
+  padding: 1.6rem 5.6rem;
+
+  &-link {
+    padding: 0.8rem 4rem;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+
+    &--white {
+      background-color: #fff;
+    }
+  }
+
+  &--green {
+    background-color: color.$color-green;
+    color: color.$dark-blue;
+  }
+
+  &--white-outline {
+    border-color: #fff;
+    border-width: 2px;
+    color: #fff;
+  }
+
+  &--darkBlue-bordered {
+    border-color: color.$dark-blue;
+    background-color: #fff;
+    color: color.$dark-blue;
+  }
+
+  &--primary {
+    background-color: color.$dark-blue;
+    color: #fff;
+  }
+}
+
+//aesthetics
+.primary-white-card {
+  background-color: #fff;
+  box-shadow: 0 4px 32px 0 rgba(#000, 0.08);
+  padding: 1.6rem;
+  border-radius: 4px;
+}
+
+.primary-dark-card {
+  background-color: color.$dark-blue;
+  box-shadow: 0 4px 32px 0 rgba(#000, 0.08);
+  padding: 1.6rem;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.bg-dark-blue {
+  background-color: color.$dark-blue;
+}
+
+.text-white {
+  color: #fff;
+}
+
+//typography
+.heading-1 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+
+.heading-2 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+
+.fz-md {
+  font-size: 1.6rem;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.line-h-lg {
+  line-height: 5.6rem;
+}
+
+.line-h-md {
+  line-height: 2.4rem;
+}
+
+.text-ctr {
+  text-align: center;
+}
+
+//layout
+
+.hzt-stack {
+  display: flex;
+}
+
+.vrt-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.algn-ctr {
+  align-items: center;
+}
+
+.js-btw {
+  justify-content: space-between;
+}
+
+.js-ctr {
+  justify-content: center;
+}
+
+.p-tb-8 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.image-block {
+  display: flex;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.moon {
+  width: 120rem;
+  height: 120rem;
+  border-radius: 50%;
+  background-color: color.$light-blue;
+  position: absolute;
+  z-index: -1;
+  top: -82rem;
+  right: -75rem;
+}

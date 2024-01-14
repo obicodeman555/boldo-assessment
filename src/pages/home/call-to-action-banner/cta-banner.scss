@@ -1,0 +1,44 @@
+@use "../../../sass/colors" as color;
+
+.CTABanner {
+  padding: 3rem 0 4rem;
+}
+
+.CTABanner-bg {
+  background-color: color.$dark-blue;
+  padding: 7.2rem 1rem;
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.ctaBanner-heading {
+  max-width: 71.6rem;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.form-inner {
+  display: flex;
+  gap: 2.4rem;
+  flex: 65rem;
+  max-width: 65rem;
+
+  & > input {
+    padding: 0 3.2rem;
+    border: 1px solid transparent;
+    font-size: 2rem;
+    flex: 1;
+    border-radius: 999px;
+
+    &::placeholder {
+      color: color.$dark-blue;
+    }
+  }
+}

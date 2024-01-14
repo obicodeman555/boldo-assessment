@@ -1,0 +1,46 @@
+@use "../../../../sass/colors" as color;
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2.4rem;
+  margin-bottom: 1.8rem;
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: color.$color-gray;
+  }
+}
+
+.view-page-link {
+  display: flex;
+
+  & > a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: color.$dark-blue;
+    border-bottom: 1.25px solid;
+  }
+}

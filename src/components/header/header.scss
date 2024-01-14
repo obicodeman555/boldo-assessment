@@ -1,0 +1,45 @@
+.header-navs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  & > li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header-nav__link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > img {
+    width: 12.5rem;
+
+    object-fit: cover;
+  }
+}

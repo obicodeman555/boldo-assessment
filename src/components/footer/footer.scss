@@ -1,0 +1,63 @@
+@use "../../sass/colors" as color;
+
+.footer-inner {
+  display: flex;
+
+  & > div > p {
+    font-size: 1.6rem;
+    color: color.$color-gray;
+    max-width: 30rem;
+  }
+
+  & > div > p:first-of-type {
+    margin-top: 4rem;
+  }
+
+  & > div > p:last-of-type {
+    margin-top: 6.4rem;
+  }
+}
+
+.footer-navs {
+  flex: 64.2rem;
+  max-width: 64.2rem;
+  margin: 0 auto;
+}
+
+.footer-navs__list {
+  display: flex;
+  justify-content: space-between;
+
+  & > li {
+    font-size: 2rem;
+  }
+
+  & > li > h3 {
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    font-size: 1.6rem;
+  }
+
+  .link-group {
+    gap: 2rem;
+    color: color.$color-gray;
+
+    .link-with-attention {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .attention-tag {
+      background-color: color.$color-green;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: color.$dark-blue;
+      width: 7.2rem;
+      height: 3rem;
+      border-radius: 999px;
+    }
+  }
+}

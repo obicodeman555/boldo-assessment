@@ -1,0 +1,67 @@
+@use "./colors" as color;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  color: color.$primary-black;
+}
+
+body::after {
+  display: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a,
+button,
+input {
+  font-family: inherit;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color.$dark-blue;
+  border-radius: 99px;
+}

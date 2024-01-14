@@ -1,0 +1,41 @@
+@use "../../sass/colors" as color;
+
+.logos-container {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(
+      90deg,
+      color.$dark-blue 0%,
+      #0a26401c 31.6%,
+      #0a264000 72.89%,
+      color.$dark-blue 97.87%
+    );
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  & > ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  & > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.8rem 1rem;
+
+    & > img {
+      flex: 35rem;
+      max-width: 35rem;
+    }
+  }
+}
