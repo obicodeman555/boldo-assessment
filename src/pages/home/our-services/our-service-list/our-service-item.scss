@@ -63,14 +63,6 @@
     color: colr.$dark-blue;
     border-bottom: 1.25px solid;
 
-    @media(max-width: 768px) {
-      font-size: 1.4rem;
-    }
-
-    @media(max-width: 527px) {
-      font-size: 1.2rem;
-    }
-
     &>svg {
       transition: transform 250ms ease-in;
     }

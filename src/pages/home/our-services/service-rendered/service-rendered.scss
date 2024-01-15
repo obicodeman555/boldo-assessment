@@ -2,6 +2,7 @@
     padding-bottom: 8rem;
 
 
+
 }
 
 .service-description {
@@ -14,6 +15,7 @@
         flex-direction: column;
         justify-content: unset;
         margin-bottom: unset;
+        gap: 2rem;
     }
 
 
@@ -35,22 +37,11 @@
 .description-gallery {
     position: relative;
 
-
-    @media(max-width: 900px) {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 2rem;
-    }
 }
 
 .bar-chart-positioner,
 .pie-chart-positioner {
     position: absolute;
-
-    @media(max-width: 900px) {
-        position: unset;
-    }
 }
 
 .bar-chart-positioner {
@@ -58,7 +49,10 @@
     right: 6rem;
     top: 22.2rem;
 
-
+    @media(max-width: 480px) {
+        left: 3rem;
+        top: 15.2rem;
+    }
 }
 
 .bar-chart {
