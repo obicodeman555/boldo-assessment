@@ -17,7 +17,7 @@ const Hero = () => {
                 <h1 className="heading-1">
                   Save time by building fast with Boldo Template
                 </h1>
-                <p className="line-h-md">
+                <p className="hero-writeup__p line-h-md">
                   Funding handshake buyer business-to-business metrics iPad
                   partnership. First mover advantage innovator success
                   deployment non-disclosure.

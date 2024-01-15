@@ -6,6 +6,16 @@
   justify-content: space-between;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  @media(max-width: 900px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @media(max-width: 600px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .header-home {
@@ -51,6 +61,10 @@
 
   &>img {
     width: 12.5rem;
+
+    @media(max-width: 600px) {
+      width: 8rem;
+    }
 
     object-fit: cover;
   }
