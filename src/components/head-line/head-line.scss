@@ -3,6 +3,10 @@
 .headline {
   padding-bottom: 8rem;
 
+  @media(max-width: 768px) {
+    padding-bottom: 4rem;
+  }
+
   &-content {
     display: flex;
     flex-direction: column;
@@ -10,13 +14,13 @@
     max-width: 84.2rem;
     margin: 0 auto;
 
-    & > span {
+    &>span {
       font-size: 2rem;
       font-family: "Open Sans", sans-serif;
       color: color.$color-gray;
     }
 
-    & > h1 {
+    &>h1 {
       text-align: center;
     }
   }

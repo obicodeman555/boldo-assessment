@@ -1,13 +1,18 @@
-@use "../../../../sass/colors" as color;
+@use "../../../../sass/colors" as colr;
 
 .serviceItem {
   display: flex;
   flex-direction: column;
 
-  & > img {
+  &>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media(max-width: 767px) {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -22,25 +27,60 @@
     font-size: 2.4rem;
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
+
+    @media(max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    // @media(max-width: 600px) {
+    //   font-size: 1.6rem;
+    //   font-weight: 600;
+    // }
+
+
   }
 
   &__text {
     font-size: 2rem;
-    color: color.$color-gray;
+    color: colr.$color-gray;
+
+    @media(max-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
 }
 
 .view-page-link {
   display: flex;
 
-  & > a {
+  &>a {
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
     font-size: 1.8rem;
     font-weight: 700;
-    color: color.$dark-blue;
+    color: colr.$dark-blue;
     border-bottom: 1.25px solid;
+
+    @media(max-width: 768px) {
+      font-size: 1.4rem;
+    }
+
+    @media(max-width: 527px) {
+      font-size: 1.2rem;
+    }
+
+    &>svg {
+      transition: transform 250ms ease-in;
+    }
+  }
+
+  &>a:hover {
+    color: darken(colr.$color-green, 30);
+
+    &>svg {
+      transform: translateX(5px);
+    }
   }
 }

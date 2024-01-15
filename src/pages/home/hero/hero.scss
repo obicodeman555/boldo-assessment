@@ -37,23 +37,11 @@
   @media(max-width: 500px) {
     max-width: 99%;
 
-    &>h1.heading-1 {
-      font-size: 3rem;
-    }
-
     .hero-writeup__p {
       font-size: 1.4rem;
     }
   }
 
-  @media(max-width: 384px) {
-    &>h1.heading-1 {
-      font-size: 2.5rem;
-    }
-
-
-
-  }
 
 
   &>p {

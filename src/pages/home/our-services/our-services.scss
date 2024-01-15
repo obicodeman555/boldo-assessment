@@ -1,18 +1,6 @@
 @use "../../../sass/colors" as color;
 
-.service-description {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12rem;
 
-  & > section {
-    flex-basis: 50rem;
-    max-width: 50rem;
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .button-block {
   display: flex;
@@ -25,97 +13,19 @@
   flex-direction: column;
   gap: 2.4rem;
 
-  & > li {
+  &>li {
     display: flex;
     align-items: center;
     gap: 2.5rem;
     font-size: 2rem;
 
-    & > svg {
+    &>svg {
       font-size: 3.6rem;
       color: color.$dark-blue;
     }
   }
 }
 
-.service-rendered {
-  padding-bottom: 8rem;
-  // border: 1px solid transparent;
-}
-
-.description-gallery {
-  position: relative;
-}
-
-.bar-chart-positioner {
-  position: absolute;
-  right: 6rem;
-  top: 22.2rem;
-}
-
-.bar-chart {
-  width: 25rem;
-}
-
-.pie-chart {
-  width: 30rem;
-
-  & > .chart-content {
-    align-items: center;
-  }
-}
-
-.pie-chart-positioner {
-  position: absolute;
-  top: 30.4rem;
-  left: 4.8rem;
-}
-
-.pie-chart__category-list {
-  display: flex;
-  flex-direction: column;
-  font-family: "Manrope", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 400;
-  gap: 1.2rem;
-
-  & > li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-}
-
-.chart {
-  background-color: #fff;
-  box-shadow: 0 4px 32px 0 rgba(#000, 0.12);
-  border-radius: 1.2rem;
-  padding: 4rem;
-
-  &-content,
-  &-data {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &-content {
-    gap: 2rem;
-  }
-
-  &-data {
-    gap: 0.5rem;
-    font-family: "Manrope", sans-serif;
-
-    & > .chart-percentage {
-      font-size: 2.4rem;
-      font-weight: 700;
-    }
-
-    & > .chart-text {
-      font-size: 1.4rem;
-    }
-  }
-}
 
 //customer review
 .customer-review {
@@ -135,12 +45,12 @@
   justify-content: space-between;
   margin-top: 5.6rem;
 
-  & > div {
+  &>div {
     flex-basis: 500px;
     max-width: 500px;
   }
 
-  & > ul {
+  &>ul {
     flex: 500px;
     max-width: 500px;
   }
@@ -176,7 +86,7 @@
     display: flex;
     flex-direction: column;
 
-    & > button {
+    &>button {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -184,7 +94,7 @@
       border: none;
       background-color: transparent;
 
-      & > svg {
+      &>svg {
         font-size: 3.65rem;
         color: color.$dark-blue;
       }
