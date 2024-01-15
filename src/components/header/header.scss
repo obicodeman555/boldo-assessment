@@ -1,7 +1,11 @@
+@use "../../sass/colors" as colr;
+
 .header-navs {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .header-home {
@@ -16,10 +20,13 @@
   display: flex;
   align-items: center;
   gap: 3rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 
-  & > li {
+
+  @media(max-width: 900px) {
+    display: none;
+  }
+
+  &>li {
     display: flex;
     flex-direction: column;
   }
@@ -30,6 +37,11 @@
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  transition: color 250ms ease-in;
+
+  &:hover {
+    color: colr.$color-green;
+  }
 }
 
 .logo {
@@ -37,9 +49,122 @@
   align-items: center;
   justify-content: center;
 
-  & > img {
+  &>img {
     width: 12.5rem;
 
     object-fit: cover;
+  }
+}
+
+//mobile navigation styles
+
+
+.mobile-nav-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  display: none;
+
+  @media(max-width: 900px) {
+    display: block;
+  }
+}
+
+.mobile-nav__toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+
+  background-color: #fff;
+  transition: background-color, 250ms ease-in;
+
+  &>svg {
+    font-size: 3.5rem;
+
+  }
+
+
+  &.active {
+    background-color: colr.$color-green;
+    scale: (.97);
+  }
+
+  &:hover {
+    background-color: colr.$color-green;
+  }
+}
+
+.mobile-nav {
+  position: absolute;
+  z-index: 9999;
+  background-color: #fff;
+  top: 6rem;
+  border-radius: 8px;
+  right: 0rem;
+  width: 18rem;
+  padding: 2rem;
+  box-shadow: 0 0 1px 1px rgba(colr.$color-green, 0.56);
+  transition: transform 250ms ease-in;
+
+
+  &.hidden {
+    transform: translateX(200%);
+  }
+
+  &.show {
+    transform: translateX(0);
+  }
+
+}
+
+
+
+.mobile-nav__list {
+
+  display: flex;
+  flex-direction: column;
+
+
+  &>li {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    margin-bottom: 1rem;
+
+  }
+
+  &>li:last-child {
+    margin-top: 1rem;
+
+    //login button link
+    &>a {
+      transition: background-color 300ms ease-in;
+    }
+
+    &>a:hover {
+      background-color: #fff;
+      border: 1.5px solid colr.$dark-blue;
+      color: colr.$dark-blue;
+    }
+  }
+
+
+}
+
+.mobile-nav__link {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0.75rem;
+  border-bottom: .5px solid lighten(colr.$primary-black, 85);
+  border-radius: 4px;
+
+  &:hover {
+    background-color: lighten(colr.$color-green, 18);
   }
 }
