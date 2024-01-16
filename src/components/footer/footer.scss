@@ -3,18 +3,33 @@
 .footer-inner {
   display: flex;
 
-  & > div > p {
+  @media(max-width: 650px) {
+    flex-direction: column;
+
+  }
+
+  &>div>p {
     font-size: 1.6rem;
     color: color.$color-gray;
     max-width: 30rem;
   }
 
-  & > div > p:first-of-type {
+  &>div>p:first-of-type {
     margin-top: 4rem;
+
+    @media(max-width: 650px) {
+      margin-top: 2rem;
+
+    }
   }
 
-  & > div > p:last-of-type {
+  &>div>p:last-of-type {
     margin-top: 6.4rem;
+
+    @media(max-width: 650px) {
+      margin-top: 2rem;
+
+    }
   }
 }
 
@@ -22,17 +37,24 @@
   flex: 64.2rem;
   max-width: 64.2rem;
   margin: 0 auto;
+
+  @media(max-width: 650px) {
+    flex: unset;
+    max-width: unset;
+    margin: unset;
+    margin-top: 2rem;
+  }
 }
 
 .footer-navs__list {
   display: flex;
   justify-content: space-between;
 
-  & > li {
+  &>li {
     font-size: 2rem;
   }
 
-  & > li > h3 {
+  &>li>h3 {
     font-weight: 700;
     margin-bottom: 3.2rem;
     font-size: 1.6rem;
@@ -41,6 +63,11 @@
   .link-group {
     gap: 2rem;
     color: color.$color-gray;
+
+    @media(max-width: 650px) {
+      font-size: 1.4rem;
+
+    }
 
     .link-with-attention {
       display: flex;

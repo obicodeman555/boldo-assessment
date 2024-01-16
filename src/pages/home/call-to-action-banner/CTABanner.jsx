@@ -8,8 +8,8 @@ const CTABanner = () => {
           <h1 className="heading-1 text-white text-ctr ctaBanner-heading">
             An enterprise template to ramp up your company website
           </h1>
-          <form className="form">
-            <div className="form-inner">
+          <form className="CTABanner-form">
+            <div className="CTABanner-form__inner">
               <input type="text" placeholder="Your email address" />
 
               <button type="button" className="button button--green">

@@ -21,7 +21,7 @@
       padding-right: 6rem;
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: 767px) {
       padding-left: 2rem;
       padding-right: 2rem;
     }
@@ -43,9 +43,9 @@
     padding: 1rem 4rem;
   }
 
-  @media(max-width: 420px) {
+  @media(max-width: 480px) {
     padding: .75rem 2rem;
-    font-size: 1.25rem;
+    font-size: 1.8rem;
     font-weight: 600;
   }
 

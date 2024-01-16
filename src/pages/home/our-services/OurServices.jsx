@@ -57,7 +57,7 @@ const OurServices = () => {
           </div>
         </article>
 
-        <article className="p-tb-8">
+        <article className="p-tb-8 ourservices-4">
           <div className="image-block">
             <img
               src={ITWorkersAtOffice}
@@ -65,7 +65,7 @@ const OurServices = () => {
             />
           </div>
 
-          <div className="accordion-block">
+          <div className="ourservices-4-content">
             <div>
               <h2 className="heading-2">
                 We connect our customers with the best, and help them keep
@@ -88,8 +88,8 @@ const OurServices = () => {
                 </header>
                 <article
                   className={`${accordionCatergory === "button-one" && accordionIndex === 0
-                      ? "accordion-content show"
-                      : "accordion-content hide"
+                    ? "accordion-content show"
+                    : "accordion-content hide"
                     }`}
                 >
                   <p>
@@ -113,8 +113,8 @@ const OurServices = () => {
                 </header>
                 <article
                   className={`${accordionCatergory === "button-two" && accordionIndex === 1
-                      ? "accordion-content show"
-                      : "accordion-content hide"
+                    ? "accordion-content show"
+                    : "accordion-content hide"
                     }`}
                 >
                   <p>

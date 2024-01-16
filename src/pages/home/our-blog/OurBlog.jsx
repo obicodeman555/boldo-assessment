@@ -2,6 +2,8 @@ import React from "react";
 import HeadLine from "components/head-line/HeadLine";
 import smilingLadyOnPhone from "assets/svgs/lady-smiling-on-phone-small.svg";
 import bloggerImage from "assets/images/lady-in-coat.jpeg";
+import bloggerImage2 from "assets/images/bloggerImage2.png";
+import bloggerImage3 from "assets/images/bloggerImage3.png";
 import serviceImage1 from "assets/svgs/green-bg-illustrator-small.svg";
 import feturedBlogImage3 from "assets/svgs/our-blog-img-3.svg";
 import "./our-blog.scss";
@@ -50,8 +52,8 @@ const OurBlog = () => {
                   user interface rockstar.
                 </p>
                 <div className="featured-blog__profile">
-                  <img src={bloggerImage} alt="Blogger profile gallery" />
-                  <span className="blogger-name">Chandler Bing</span>
+                  <img src={bloggerImage2} alt="Blogger profile gallery" />
+                  <span className="blogger-name">Rachel Green</span>
                 </div>
               </Link>
             </article>
@@ -70,8 +72,8 @@ const OurBlog = () => {
                   value proposition
                 </p>
                 <div className="featured-blog__profile">
-                  <img src={bloggerImage} alt="Blogger profile gallery" />
-                  <span className="blogger-name">Chandler Bing</span>
+                  <img src={bloggerImage3} alt="Blogger profile gallery" />
+                  <span className="blogger-name">Monica Geller</span>
                 </div>
               </Link>
             </article>

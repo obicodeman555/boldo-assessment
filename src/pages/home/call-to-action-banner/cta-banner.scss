@@ -18,24 +18,40 @@
   margin: 0 auto;
 }
 
-.form {
+.CTABanner-form {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+
+
 }
 
-.form-inner {
+.CTABanner-form__inner {
   display: flex;
   gap: 2.4rem;
   flex: 65rem;
   max-width: 65rem;
 
-  & > input {
+  @media(max-width: 650px) {
+    flex-direction: column;
+
+    &>* {
+      max-width: 100%;
+    }
+
+  }
+
+  &>input {
     padding: 0 3.2rem;
     border: 1px solid transparent;
     font-size: 2rem;
     flex: 1;
     border-radius: 999px;
+
+    @media(max-width: 650px) {
+      padding: 1.4rem 3.2rem;
+      font-size: 1.6rem;
+    }
 
     &::placeholder {
       color: color.$dark-blue;
