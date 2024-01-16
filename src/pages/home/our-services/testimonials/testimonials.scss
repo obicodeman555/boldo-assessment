@@ -9,6 +9,10 @@
   display: flex;
   align-items: flex-start;
   gap: 2rem;
+
+  @media(max-width: 900px) {
+    gap: 1rem;
+  }
 }
 
 .reviewer {
@@ -16,6 +20,10 @@
   background-color: #fff;
   padding: 4rem;
   border-radius: 1.2rem;
+
+  @media(max-width: 900px) {
+    padding: 2rem;
+  }
 }
 
 .reviewer-container {
@@ -27,6 +35,10 @@
 .reviewer-text {
   font-size: 2.4rem;
   max-width: 28rem;
+
+  @media(max-width: 900px) {
+    font-size: 1.6rem;
+  }
 }
 
 .reviewer-info {
@@ -48,13 +60,23 @@
   gap: 0.35rem;
   color: color.$dark-blue;
 
-  & > strong {
+  &>strong {
     font-size: 1.6rem;
     font-weight: 700;
+
+    @media(max-width: 900px) {
+      font-size: 1.2rem;
+
+    }
   }
 
-  & > span {
+  &>span {
     font-size: 1.4rem;
+
+    @media(max-width: 900px) {
+      font-size: 1.125rem;
+
+    }
   }
 }
 
@@ -68,7 +90,14 @@
   align-items: center;
   gap: 3rem;
 
-  & > button {
+  @media(max-width: 900px) {
+    top: -.26rem;
+    right: -3rem;
+
+
+  }
+
+  &>button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,8 +107,21 @@
     height: 7.2rem;
     border-radius: 100%;
 
-    & > svg {
+    @media(max-width: 900px) {
+      width: 4.5rem;
+      height: 4.5rem;
+
+
+    }
+
+    &>svg {
       font-size: 4rem;
+
+      @media(max-width: 900px) {
+        font-size: 3rem;
+
+
+      }
     }
   }
 }
